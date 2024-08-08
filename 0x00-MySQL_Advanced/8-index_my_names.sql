@@ -1,2 +1,3 @@
 -- Query to count names starting with 'a'
-SELECT COUNT(name) FROM names WHERE name LIKE 'a%';
+CREATE INDEX idx_name_first
+ON names(name(1));
